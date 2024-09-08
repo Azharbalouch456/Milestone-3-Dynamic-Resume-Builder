@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1> Editable-Dyanamic-Resume-Builder</h1>
+<div class="container">
+    <!-- Form Section -->
+    <section id="form-section">
+        <form id="resume-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="profile-pic">Profile Picture URL:</label>
+                <input type="url" id="profile-pic" name="profile-pic" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Education</legend>
+                <textarea id="education" name="education" rows="4" placeholder="Enter your education details..." required></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Work Experience</legend>
+                <textarea id="work-experience" name="work-experience" rows="4" placeholder="Enter your work experience details..." required></textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Skills</legend>
+                <textarea id="skills" name="skills" rows="4" placeholder="Enter your skills, separated by commas..." required></textarea>
+            </fieldset>
+            
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+    
+    <!-- Resume Display Section -->
+    <section id="resume-section">
+        <div id="resume"></div>
+        <button id="edit-button">Edit Resume</button>
+    </section>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
